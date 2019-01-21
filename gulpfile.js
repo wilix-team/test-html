@@ -9,9 +9,9 @@ const concat = require('gulp-concat');
 
 // paths
 const paths = {
+  src: 'src/',
   srcHTML: 'src/**/*.html',
-  srcSCSS: 'src/**/*.scss',
-
+  srcSCSS: 'src/**/index.scss',
   dist: 'dist/',
 };
 
@@ -44,6 +44,13 @@ function css() {
     .pipe(browsersync.stream());
 }
 
+// image task
+function image() {
+  return gulp
+    .src(`${paths.src}assets/**/*`)
+    .pipe(gulp.dest(`${paths.dist}assets/`));
+}
+
 // Clean assets
 function clean() {
   return del([paths.dist]);
@@ -56,7 +63,7 @@ function watchFiles() {
 }
 
 // define complex tasks
-const build = gulp.series(clean, gulp.parallel(css, html));
+const build = gulp.series(clean, gulp.parallel(css, html, image));
 const watch = gulp.parallel(watchFiles, browserSync);
 
 // export tasks

@@ -1,18 +1,9 @@
 @import './media.scss';
 
-/* === RESET === */
-html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, header, footer {
-	margin: 0; 
-	padding: 0;
-	border: 0;
-}
-ol, ul { 
-	list-style: none; 
-}
-/* === END RESET === */
-
 /* === global === */
 body {
+  margin: 0; 
+	padding: 0;
   font: normal 14px 'Roboto';
   line-height: 1.4;
   color: $black;
@@ -28,6 +19,10 @@ div, p, ul {
   word-break: break-word;
 }
 
+.containers__group-1, .containers__group-2, .containers__group-3, .containers__subgroup-1 {
+  overflow: initial;
+}
+
 .margin-right {
   margin-right: 5px;
 }
@@ -39,9 +34,6 @@ div, p, ul {
 }
 .margin-bottom {
   margin-bottom: 7px;
-}
-.containers__subgroup-1 {
-  overflow: initial;
 }
 /* === end global === */
 

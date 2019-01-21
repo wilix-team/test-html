@@ -89,6 +89,9 @@ $inside-padding: 15px;
   }
 
   &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     padding: $inside-padding;
   }
 

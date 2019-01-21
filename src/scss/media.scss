@@ -1,0 +1,105 @@
+@import './breakpoints.scss';
+@import './colors.scss';
+@import './desktop-style.scss';
+
+@include xs {
+  .container-desktop {
+    display: none;
+  }
+}
+
+@include sm {
+  .containers {
+    margin: 0 12px;
+
+    &__group-1 {
+      display: flex;
+      flex-direction: column-reverse;
+
+      .container-3 {
+        &__block {
+          &_big {
+            height: auto;
+            min-height: 491px;
+            margin-right: 5px;
+            padding: 0;
+          }
+          &_small {
+            padding: 15px;
+          }
+        }
+
+        &__wrapp {
+          margin-left: 5px;
+        }
+
+        &__title {
+          &_big {
+            padding: 30px 42px 0 25px;
+          }
+        }
+      }
+    }
+
+    &__subgroup-1 {
+      display: flex;
+
+      .container-1 {
+        flex: 2;
+        margin: 0;
+        margin-right: 5px;
+      }
+
+      .container-2 {
+        flex: 1;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 5px;
+
+        &__block {
+          margin: 0;
+
+          &_bg_blue {
+            margin: 0;
+            margin-bottom: 5px;
+          }
+
+          &_bg_yellow {
+            margin: 0;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    &__group-3 {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .container-4 {
+        flex: 2;
+        margin-left: 5px;
+      }
+
+      .container-5 {
+        flex: 1;
+        flex-direction: column;
+        margin-right: 5px;
+
+        &__block {
+          margin: 0;
+
+          &_bg_pink {
+            margin-bottom: 5px;
+          }
+
+          &_bg_red {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  @extend .container-desktop;
+}

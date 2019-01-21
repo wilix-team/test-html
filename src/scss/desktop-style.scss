@@ -1,0 +1,103 @@
+@import './colors.scss';
+
+// variables
+$inside-padding: 15px;
+
+.container-desktop {
+  display: flex;
+  margin-top: 10px;
+
+  &__wrapp {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-right: 5px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: flex-end;
+    min-height: 241px;
+    background: $light-gray;
+
+    &_big {
+      flex: 2;
+      margin-left: 5px;
+      align-items: baseline;
+      word-break: break-all;
+      min-height: 492px;
+    }
+  }
+
+  &__image-block {
+    position: relative;
+    height: 241px;
+
+    .image {
+      cursor: pointer;
+      transition: .2s;
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      &__yacht {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &__elips {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        margin-left: -27px;
+      }
+
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0);
+        color: #fff;
+        opacity: 0;
+      }
+
+      &__title {
+        position: absolute;
+        bottom: 11px;
+        left: 15px;
+        color: #fff;
+      }
+
+      &:hover {
+        .image__yacht, .image__title {
+          filter: blur(3px);
+        }
+        .image__overlay {
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+
+  &__title {
+    padding: $inside-padding;
+  }
+
+  &__list {
+    padding: $inside-padding;
+  }
+
+  &__item {
+    padding: $inside-padding;
+  }
+
+  &__span {
+    padding: $inside-padding;
+  }
+}
+

@@ -1,0 +1,226 @@
+@import './media.scss';
+
+/* === RESET === */
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, header, footer {
+	margin: 0; 
+	padding: 0;
+	border: 0;
+}
+ol, ul { 
+	list-style: none; 
+}
+/* === END RESET === */
+
+/* === global === */
+body {
+  font: normal 14px 'Roboto';
+  line-height: 1.4;
+  color: $black;
+}
+.content {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 768px;
+}
+
+div, p, ul {
+  overflow: auto;
+  word-break: break-word;
+}
+
+.margin-right {
+  margin-right: 5px;
+}
+.margin-left {
+  margin-left: 5px;
+}
+.margin-top {
+  margin-top: 10px;
+}
+.margin-bottom {
+  margin-bottom: 7px;
+}
+.containers__subgroup-1 {
+  overflow: initial;
+}
+/* === end global === */
+
+// variables
+$inside-padding: 15px;
+
+/* === header === */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $gray;
+  min-height: 90px;
+
+  &__title {
+    font-size: 24px;
+  }
+}
+/* === end header === */
+
+/* === container-1 === */
+.container-1 {
+  margin: 10px 0;
+
+  &__wrapp {
+    display: flex;
+  }
+
+  &__block {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    min-height: 155px;
+    background: $light-gray;
+  }
+
+  &__title {
+    padding: $inside-padding;
+  }
+}
+/* === end container-1 === */
+
+/* === container-2 === */
+.container-2 {
+  display: flex;
+  margin: 10px 0;
+
+  &__block {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    min-height: 155px;
+
+    &_bg_blue {
+      background: $blue;
+    }
+
+    &_bg_yellow {
+      background: $yellow;
+    }
+
+  }
+
+  &__title {
+    padding: $inside-padding;
+  }
+}
+/* === end container-2 === */
+
+/* === container-3 === */
+.container-3 {
+  display: flex;
+  align-items: stretch;
+  margin: 10px 0;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__block {
+    flex: 2;
+    background: #A2A9B7;
+    color: #fff;
+    height: 100%;
+
+    &_big {
+      height: 192.98px;
+      font-size: 18px;
+      line-height: 26px;
+      overflow-x: hidden;
+      text-align: center;
+      padding: 19px 0px 0 10px;
+    }
+
+    &_small {
+      display: flex;
+      align-items: flex-end;
+      padding: 10px;
+      height: 100%;
+      min-height: 82.22px;
+    }
+
+  }
+}
+/* === end container-3 === */
+
+/* === container-4 === */
+.container-4 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  &__wrapp {
+    display: flex;
+    flex: 1;
+  }
+
+  &__block {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    min-height: 154px;
+    
+    &_bg_pink {
+      background: $pink;
+    }
+
+    &_bg_purple {
+      background: $purple;
+    }
+  }
+
+  &__title {
+    padding: $inside-padding;
+  }
+}
+/* === end container-4 === */
+
+/* === container-5 === */
+.container-5 {
+  display: flex;
+  margin: 10px 0;
+
+  &__block {
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    min-height: 155px;
+
+    &_bg_pink {
+      background: $pink;
+    }
+
+    &_bg_red {
+      background: $red;
+    }
+
+  }
+
+  &__title {
+    padding: $inside-padding;
+  }
+}
+/* === end container-5 === */
+
+/* === footer === */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 91px;
+  background: $gray;
+
+  &__title {
+    font-size: 24px;
+  }
+}
+/* === end footer === */
+
+

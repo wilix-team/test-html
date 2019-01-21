@@ -18,7 +18,7 @@ $inside-padding: 15px;
     display: flex;
     align-items: flex-end;
     min-height: 241px;
-    background: $light-gray;
+    background: $light-green;
 
     &_big {
       flex: 2;
@@ -32,6 +32,7 @@ $inside-padding: 15px;
   &__image-block {
     position: relative;
     height: 241px;
+    overflow: hidden;
 
     .image {
       cursor: pointer;
@@ -87,20 +88,23 @@ $inside-padding: 15px;
   &__title {
     padding: $inside-padding;
   }
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding: $inside-padding;
-  }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: $inside-padding;
 
   &__item {
-    padding: $inside-padding;
+    margin-bottom: 30px;
   }
 
   &__span {
-    padding: $inside-padding;
+    max-width: 126px;
+  display: inline-block;
+  text-align: right;
   }
 }
+
 

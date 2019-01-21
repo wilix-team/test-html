@@ -15,12 +15,7 @@ body {
 }
 
 div, p, ul {
-  overflow: auto;
   word-break: break-word;
-}
-
-.containers__group-1, .containers__group-2, .containers__group-3, .containers__subgroup-1 {
-  overflow: initial;
 }
 
 .margin-right {
@@ -85,6 +80,7 @@ $inside-padding: 15px;
     display: flex;
     align-items: flex-end;
     flex: 1;
+    overflow: hidden;
     min-height: 155px;
 
     &_bg_blue {
@@ -133,6 +129,7 @@ $inside-padding: 15px;
     &_small {
       display: flex;
       align-items: flex-end;
+      overflow: hidden;
       padding: 10px;
       height: 100%;
       min-height: 82.22px;
@@ -157,6 +154,7 @@ $inside-padding: 15px;
     display: flex;
     align-items: flex-end;
     flex: 1;
+    overflow: hidden;
     min-height: 154px;
     
     &_bg_pink {
@@ -183,6 +181,7 @@ $inside-padding: 15px;
     display: flex;
     align-items: flex-end;
     flex: 1;
+    overflow: hidden;
     min-height: 155px;
 
     &_bg_pink {
